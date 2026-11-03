@@ -15,7 +15,7 @@ jobs:
     env:
       COMPILER: viridiscomms/fastedge-apps-compiler:0.0.2
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Test
         run: docker run --rm -v "$PWD":/work -w /work "$COMPILER" cargo test --target x86_64-unknown-linux-gnu
       - name: Build
