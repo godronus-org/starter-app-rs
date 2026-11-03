@@ -1,0 +1,14 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    if: github.repository_owner == 'godronus-org' && !github.event.repository.is_template  # the starter itself never releases or deploys
+    uses: godronus-org/toolkit/.github/workflows/release.yaml@v1
+    secrets: inherit

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/godronus-org/toolkit/v1/schema/fastedge.schema.json",
+  "kind": "app",
+  "runtime": "http-app",
+  "language": "rust",
+
+  "app": {
+    // Set before the first deploy — Deploy and PR checks fail until you do.
+    // Created by name on first deploy; the id is written back by PR (T7).
+    // "name": "my-app",
+    "env": { "GREETING": "hello" }
+  }
+}
