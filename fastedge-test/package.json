@@ -8,6 +8,6 @@
     "debug": "npx @gcoredev/fastedge-test --project-dir .."
   },
   "devDependencies": {
-    "@gcoredev/fastedge-test": "0.2.6"
+    "@gcoredev/fastedge-test": "0.2.8"
   }
 }
